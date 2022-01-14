@@ -19,6 +19,10 @@ body{
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
     margin:auto;
     width: 80%;
@@ -35,6 +39,10 @@ body{
 
 .cursiva{
     font-family: Betterworks;
+}
+
+.paddin-seccion{
+padding: 80px 0;
 }
 /*-------------------------- Flex -------------------------------*/
 /*---------------------------------------------------------------*/
@@ -92,7 +100,6 @@ header ul li{
 
 header a{
     color:white;
-    text-decoration: none;
     font-size: 1.5rem;
     text-shadow: 2px 3px 4px rgba(2,25,54,0.6);
 }
@@ -101,3 +108,45 @@ header nav{
     margin-right: 100px;
 }
 
+
+/* --------------------------------Sobre Mi ---------------------------------*/
+/* ------------------------------------------------------------------------- */
+
+
+#sobreMi img{  
+    width:100%;
+    margin-top: 40px;
+}
+
+#sobreMi div{
+    width:50%;
+}
+
+
+
+
+
+
+
+/* -------------------------------- Conocimientos ---------------------------------*/
+/* ------------------------------------------------------------------------------- */
+
+#conocimientos{
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+    margin-top: -180px;
+}
+
+
+
+/* --------------------------------    Cita    ---------------------------------*/
+/* -----------------------------------------------------------------------------*/
+
+#cita div{
+    background-color: #fff;
+    width: 65%;
+    margin: 50px auto;
+    border-radius:50px;
+    color: #163953;
+    padding:80px;
+}
