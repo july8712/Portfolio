@@ -4,33 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio | Julieta Bondi</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <title>Mi Portfolio | Julieta Bondi</title>
 </head>
 <body>
     <header class="d-flex just-end align-center"> 
-        <nav>
-            <ul class="d-flex">
-                <li><a href="#sobreMi">Sobre mí</a></li>
-                <li><a href="#conocimientos">Mis Conocimientos</a></li>
-                <li><a href="#proyectos">Mis Proyectos</a></li>
-                <li ><a href="#contactame" class="btn btn-primary">Contactame</a></li> 
-            </ul>
-        </nav>
+        <div class="container-nav">
+            <nav id="nav-desktop" class="d-flex">
+                <ul class="d-flex menu">
+                    <li><a class="btn" href="#sobreMi">Sobre mí</a></li>
+                    <li><a class="btn" href="#conocimientos">Mis Conocimientos</a></li>
+                    <li><a class="btn" href="#proyectos">Mis Proyectos</a></li>
+                </ul>
+                <ul>
+                    <li><a class="btn btn-primary btn-rounded" href="#contactame">Contactame</a></li> 
+                </ul>
+            </nav>
+
+            <!-- Menú hamburguesa -->
+
+            <div class="respmenu">
+                <input type="checkbox">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+                <nav>
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
 
         <!-- Comienzo sección Sobre Mí -->
 
-        <section id="sobreMi" class="d-flex container paddin-seccion">
-            <div class="d-flex col">
-                <h1>¡Hola! Soy <em class="cursiva">July Bondi</em></h1>
-                <h2>Desarrolladora y Cantante</h2>
-                <a href="#contactame">¡CONTACTAME!</a>
-            </div>
-            <div class="d-flex col">
-                <img src="img/quien_soy.png" alt="¡Hola! Soy July Bondi, desarrolladora y cantante">
+        <section id="sobreMi" class="padding-seccion">
+            <div class="container d-flex">
+                <div class="d-flex col just-center align-end" id="presentacion">
+                    <h1>¡Hola! Soy <em class="font-primary">July Bondi</em></h1>
+                    <h2>Desarrolladora y Cantante</h2>
+                    <a href="#contactame" class="btn btn-rounded btn-secundary btn_small">¡CONTACTAME!</a>
+                </div>
+                <div class="d-flex col">
+                    <img src="img/quien_soy.png" alt="¡Hola! Soy July Bondi, desarrolladora y cantante">
+                </div>
             </div>
         </section>
 
@@ -38,17 +62,39 @@
 
         <!-- Comienzo sección Mis Conocimientos -->
 
-        <section id="conocimientos" class="paddin-seccion">
-            <div class="container">
-                <h2 class="cursiva">Mis Conocimientos</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nulla dolorem consequatur distinctio earum voluptates soluta in ex quasi nostrum. Temporibus facilis quam ipsum qui laborum possimus maxime unde consequatur.</p>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <section id="conocimientos" class="padding-seccion textura">
+            <div class="container d-flex just-center">
+                <div class="d-flex col align-center">
+                    <div class="d-flex col align-center">
+                        <h2 class="font-primary">Mis Conocimientos</h2>
+                        <p>Actualmente me encuentro estudiando en <strong>Ada Itw</strong> la carrera de Front End, en donde estoy adquiriendo conocimientos como:</p>
+                    </div>
+                    <div class="d-flex wrap wrap-container just-around">
+                        <div class="card d-flex col align-center">
+                            <img src="img/html5.png" alt="HTML 5">
+                            <h3>HTML 5</h3>
+                        </div>
+                        <div class="card d-flex col align-center">
+                            <img src="img/css3.png" alt="CSS3">
+                            <h3>CSS 3</h3>
+                        </div>
+                        <div class="card d-flex col align-center">
+                            <img src="img/sass.png" alt="Sass">
+                            <h3>Sass</h3>
+                        </div>
+                        <div class="card d-flex col align-center">
+                            <img src="img/js.png" alt="Javascript">
+                            <h3>Javascript</h3>
+                        </div>
+                        <div class="card d-flex col align-center">
+                            <img src="img/react.png" alt="React">
+                            <h3>React</h3>
+                        </div>
+                        <div class="card d-flex col align-center">
+                            <img src="img/git.png" alt="Git">
+                            <h3>Git</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -57,11 +103,10 @@
 
         <!-- Comienzo sección Cita --> 
 
-        <section id="cita" class="container paddin-seccion">
-            <div>
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero est commodi hic, enim repellat sit, voluptas assumenda consequatur tempore eaque a in vitae voluptatibus, vel nesciunt animi aliquid. Cumque.</p>
-                <p>Nombre</p>
+        <section id="cita" class="container padding-seccion">
+            <div class="d-flex just-center align-center col">
+                <p><i>"El talento no nos sirve de nada si no lo acompañamos de <br> esfuerzo y constancia."</i></p>
+                <p>Anónimo</p>
             </div>
         </section>
 
@@ -69,16 +114,32 @@
 
         <!-- Comienzo sección Mis Proyectos -->
 
-        <section id="proyectos">
-            <h2 class="cursiva">Mis Proyectos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum reprehenderit hic labore nihil est quasi sunt mollitia molestiae itaque perspiciatis vitae, consequatur, cum at voluptatem officia assumenda sed laborum quo? </p>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+        <section id="proyectos" class="padding-seccion textura">
+            <div class="container">
+                <div class="col d-flex align-center">
+                    <h2 class="font-primary">Mis Proyectos</h2>
+                    <p>Estos son algunos de los proyectos que realicé y otros que estaré realizando muy pronto:</p>
+                </div>
+                <div class="d-flex wrap just-around">
+                    <div class="proyectos">
+                        <a href="https://july8712.github.io/portfolio_ada/" class=""><img src="img/portfolio.png" alt="Mi portfolio"></a>
+                    </div>
+                    <div class="proyectos">
+                        <a href="http://englishincompany.com.ar/" class=""><img src="img/english.png" alt="English in Company"></a>
+                    </div>
+                    <div class="proyectos">
+                        <a href="https://july8712.github.io/siYaGanamos/" class=""><img src="img/si_ya_ganamos.png" alt="Si ya Ganamos"></a>
+                    </div>
+                    <div class="proyectos">
+                        <a href="#" class=""><img src="img/generador_de_memes.png" alt="Generador de Memes"></a>
+                    </div>
+                    <div class="proyectos">
+                        <a href="#" class=""><img src="img/calculador_de_gastos.png" alt="Calculador de Gastos"></a>
+                    </div>
+                    <div class="proyectos">
+                        <a href="#" class=""><img src="img/administrador_de_reuniones.png" alt="Administrador de Reuniones"></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -87,40 +148,68 @@
         <!-- Comienzo sección Contactame -->
 
         <section id="contactame">
-            <h2 class="cursiva">Contactame</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quibusdam voluptas possimus perferendis, aliquam expedita assumenda commodi earum cupiditate maiores eligendi alias necessitatibus sit esse quidem quod error, accusantium soluta.</p>
-            <nav>
-                <ul>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                </ul>
-            </nav>
-            <form action="">
-                <!-- Nombre -->
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
+            <div class="container">
+                <div class="d-flex align-center col contacto">
+                    
+                        <h2 class="font-primary">Contactame</h2>
+                    
+                    <div class="d-flex">
+                        <div class="d-flex col">
+                            <p>¡Si queres contactarme no dudes en escribirme!</p>
+                            <nav>
+                                <ul>
+                                    <li><a href=""><img src="" alt="">Diseño</a></li>
+                                    <li><a href="https://github.com/july8712"><img src="" alt="">GitHib</a></li>
+                                    <li><a href="https://www.linkedin.com/in/julieta-bondi/"><img src="" alt="">linkedin</a></li>
+                                    <li>julietabondi@gmail.com</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="d-flex col formulario">
+                            <form action="" class="d-flex col">
 
-                <!-- Teléfono -->
-                <label for="telefono">Teléfono</label>
-                <input type="text" id="telefono">
+                                <!-- Nombre -->
+                                <div class="d-flex">
+                                    <div class="d-flex col">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" id="nombre" class="input-radius">
+                                    </div>
 
-                <!-- Email -->
-                <label for="email">Mail</label>
-                <input type="email" id="email">
+                                    <!-- Teléfono -->
 
-                <!-- Mensaje -->
-                <label for="mensaje">Tu mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                                    <div class="d-flex col">
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="text" id="telefono" class="input-radius">
+                                    </div>
+                                </div>
 
-                <input type="submit" value="Enviar">
+                                <!-- Email -->
 
-            </form>
+                                <div>
+                                    <label for="email">Mail</label>
+                                    <input type="email" id="email" class="input-radius">
+                                </div>
+
+                                <!-- Mensaje -->
+                                
+                                <div>
+                                    <label for="mensaje">Tu mensaje</label>
+                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="input-radius"></textarea>
+                                </div>
+
+                                <div>
+                                    <input type="submit" value="Enviar" class="btn btn-rounded btn-secundary btn_small">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="textura">
         <nav>
             <ul>
                 <li><a href=""></a></li>

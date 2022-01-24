@@ -23,26 +23,76 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 20px;
+}
+
 .container{
     margin:auto;
     width: 80%;
 }
 
 .btn{
+    padding: 10px 50px;
+}
+
+
+.btn-rounded{
     border-radius:50px;
 }
 
 .btn-primary{
     background-color: #163953;
-    padding: 10px 50px;
 }
 
-.cursiva{
+.btn-secundary{
+    background-color: #3690bd;
+}
+
+.btn_small{
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.card{
+    background-color:white;
+    padding:40px 40px 10px 40px;
+    border-radius:20px;
+    width: 150px;
+    margin: 50px;
+    box-shadow: 1px 1px 5px 0px rgb(110, 175, 255);
+}
+
+.card h3{
+    color: #163953;
+}
+
+.wrap-container{
+    max-width: 800px;
+    margin-top: 30px;
+}
+    
+
+/* .menu li:last-child a{
+    background-color: #163953;
+} */
+
+.font-primary{
     font-family: Betterworks;
 }
 
-.paddin-seccion{
+.padding-seccion{
 padding: 80px 0;
+}
+
+.textura{
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+}
+
+footer h3{
+    margin: 0;
 }
 /*-------------------------- Flex -------------------------------*/
 /*---------------------------------------------------------------*/
@@ -70,6 +120,16 @@ padding: 80px 0;
 .align-center{
     align-items: center;
 }
+.align-end{
+    align-items: end;
+}
+
+/* .align{
+    align-items: ;
+} */
+.wrap{
+    flex-wrap: wrap;
+}
 
 
 
@@ -90,10 +150,11 @@ header{
     left: 0;
     right: 0;
     box-shadow: 4px 2px 5px 0px rgb(2, 25, 54);
+    
 } 
 
 header ul li{
-    margin: 0 20px 0 20px;
+    /* margin: 0 20px; */
     list-style-type: none;
     padding: 5px 0;
 }
@@ -108,20 +169,53 @@ header nav{
     margin-right: 100px;
 }
 
+header nav ul:last-child{
+    margin-left: 10px;
+}
+
+.container-nav{
+    position: relative;
+}
+
 
 /* --------------------------------Sobre Mi ---------------------------------*/
 /* ------------------------------------------------------------------------- */
 
+#sobreMi{
+    width: 100%;
+}
 
 #sobreMi img{  
-    width:100%;
+    width:600px;
     margin-top: 40px;
 }
 
-#sobreMi div{
+#sobreMi div div{
     width:50%;
 }
 
+#presentacion{
+    padding-right: 75px;
+}
+
+h1{
+    font-size:40px;
+    margin: -80px 0 0 0;
+}
+
+h1 em{
+    display:block;
+    font-size:35px;
+    margin-left: 150px;
+}
+
+#sobreMi h2{
+    margin-left:150px;
+    margin-top: -20px;
+    margin-bottom: 55px;
+    letter-spacing: 1.5px;
+    font-weight: 200;
+}
 
 
 
@@ -132,21 +226,202 @@ header nav{
 /* ------------------------------------------------------------------------------- */
 
 #conocimientos{
-    background-image: url(../img/fondo.png);
-    background-repeat: repeat;
-    margin-top: -180px;
+    margin-top: -184px;
+    /* position:relative; */
+
+}
+/* 
+#conocimientos::after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:rgba(0, 0, 0, 0.4)
+} */
+
+#conocimientos div div p{
+    text-align:center;
 }
 
-
+/* #conocimientos div div  */
 
 /* --------------------------------    Cita    ---------------------------------*/
 /* -----------------------------------------------------------------------------*/
 
 #cita div{
-    background-color: #fff;
+    background-image:url(../img/cita.png);
+    background-repeat:no-repeat;
     width: 65%;
-    margin: 50px auto;
-    border-radius:50px;
+    margin: 0 auto;
     color: #163953;
     padding:80px;
+    height:500px;
+    object-fit: contain;
+    background-position: center;
+}
+
+#cita div p{
+    width: 410px;
+    text-align: center;
+    font-size:25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#cita div p:last-child{
+    padding-left:200px;
+    margin-top: 10px;
+}
+
+/* -------------------------------------- Proyectos ------------------------------*/
+/* ------------------------------------------------------------------------------ */
+
+.proyectos{
+    height: 400px;
+}
+
+#proyectos .container .wrap{
+    padding-top: 70px;
+}
+
+.contenedor-proyectos{
+    width:1000px;
+}
+
+#proyectos .container{
+    max-width:1000px;
+}
+
+/* -------------------------------------- Contactame -----------------------------*/
+/* ------------------------------------------------------------------------------ */
+
+.contacto{
+    padding:100px 0;
+}
+
+.contacto ul{
+    padding-left:0;
+}
+.contacto ul li{
+    list-style-type: none;
+}
+
+/* .contacto .d-flex .col{
+    width: 50%;
+} */
+
+.contacto form{
+    padding-top: 20px;
+}
+
+.input-radius{
+    border-radius:30px;
+}
+
+form{
+    width:100%;
+}
+
+label{
+    display:block;
+}
+
+input, textarea {
+    display:block;
+    width: 100%;
+}
+
+.formulario{
+    margin-left:30px;
+}
+
+.contacto{
+    max-width:1000px;
+    margin: auto;
+}
+
+.contacto h2{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+/* menu hamburguesa */
+
+#nav-desktop ul{
+    display: flex;
+}
+
+.respmenu{
+    display:none;  
+}
+
+
+@media (max-width:750px) {
+    #nav-desktop{
+      display:none;  
+    }
+    
+
+    .respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: #234567;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+    }
+
+    .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    }
+
+    .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+    }
+
+    .respmenu input[type="checkbox"] {
+    opacity: 0;
+    }
+
+    .respmenu {
+    color: white;
+    position: absolute;
+    /* margin-top:268px; */
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #123456;
+    min-height: 48px;
+    display: flex;
+    }
+
+    .respmenu nav {
+    display: none;
+    }
+
+    .respmenu input:checked ~ nav {
+    display: block;
+    }
+
+    .respmenu input:checked ~ .fa-bars {
+    display: none;
+    }
+
+    .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+    }
 }
