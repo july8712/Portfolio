@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Betterworks";
-    src: url("./fuentes/Betterworks.otf");
+    src: url("../fuentes/Betterworks.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -11,25 +11,25 @@
     box-sizing: border-box; 
 }
 
-
 body{
     background-color: #1f5075;
     font-family: 'PT Sans', sans-serif;
     margin: 0;
     color: #fff;
+    font-size:20px;
 }
 
 a{
     text-decoration: none;
 }
 
-p{
+/* p{
     font-size: 20px;
-}
+} */
 
 .container{
     margin:auto;
-    width: 80%;
+    width: 1140px;
 }
 
 .btn{
@@ -55,12 +55,13 @@ p{
     font-size:18px;
 }
 
+
 .card{
     background-color:white;
     padding:40px 40px 10px 40px;
     border-radius:20px;
-    width: 150px;
-    margin: 50px;
+    /* width: 150px; */
+    margin: 40px 20px;
     box-shadow: 1px 1px 5px 0px rgb(110, 175, 255);
 }
 
@@ -73,11 +74,6 @@ p{
     margin-top: 30px;
 }
     
-
-/* .menu li:last-child a{
-    background-color: #163953;
-} */
-
 .font-primary{
     font-family: Betterworks;
 }
@@ -89,6 +85,10 @@ padding: 80px 0;
 .textura{
     background-image: url(../img/fondo.png);
     background-repeat: repeat;
+}
+
+.titulos{
+    font-size:30px;
 }
 
 footer h3{
@@ -173,10 +173,6 @@ header nav ul:last-child{
     margin-left: 10px;
 }
 
-.container-nav{
-    position: relative;
-}
-
 
 /* --------------------------------Sobre Mi ---------------------------------*/
 /* ------------------------------------------------------------------------- */
@@ -186,8 +182,9 @@ header nav ul:last-child{
 }
 
 #sobreMi img{  
-    width:600px;
-    margin-top: 40px;
+    width:100%;
+    margin-bottom: -94px;
+    /* margin-top: 40px; */
 }
 
 #sobreMi div div{
@@ -200,24 +197,29 @@ header nav ul:last-child{
 
 h1{
     font-size:40px;
-    margin: -80px 0 0 0;
+    line-height:2;
+    margin: 0;
+    /* margin: -80px 0 0 0; */
 }
 
 h1 em{
     display:block;
-    font-size:35px;
-    margin-left: 150px;
+    font-size:30px;
+    margin-left: 143px;
 }
 
 #sobreMi h2{
-    margin-left:150px;
-    margin-top: -20px;
-    margin-bottom: 55px;
+    /* margin-left:150px; */
+    /* margin-top: -15px; */
+    margin-bottom: 47px;
     letter-spacing: 1.5px;
     font-weight: 200;
+    font-size:20px;
 }
 
-
+#sobreMi .btn{
+    margin-bottom:-20px;
+}
 
 
 
@@ -226,10 +228,15 @@ h1 em{
 /* ------------------------------------------------------------------------------- */
 
 #conocimientos{
-    margin-top: -184px;
+    margin-top: 0px;
+
     /* position:relative; */
 
-}
+ } 
+
+/* #conocimientos .container{
+    max-width:120px
+} */
 /* 
 #conocimientos::after{
     content:"";
@@ -282,6 +289,10 @@ h1 em{
     height: 400px;
 }
 
+.proyectos img{
+    border-radius:30px;
+}
+
 #proyectos .container .wrap{
     padding-top: 70px;
 }
@@ -312,9 +323,9 @@ h1 em{
     width: 50%;
 } */
 
-.contacto form{
+/* .contacto form{
     padding-top: 20px;
-}
+} */
 
 .input-radius{
     border-radius:30px;
@@ -326,19 +337,42 @@ form{
 
 label{
     display:block;
+    margin-bottom:10px;
+    margin-top:20px;
+    font-size:20px;
 }
 
-input, textarea {
+input:not(input[type="submit"]), textarea {
     display:block;
     width: 100%;
+    padding:15px;
+}
+
+
+
+input[type="text"], input[type="email"]{
+height:40px;
+border: none;
+font-size: 15px;
+}
+
+input[type="submit"]{
+    border: none;
+    margin-top: 25px;
+}
+
+textarea{
+    border: none;
+    resize:none;
+    font-family: 'PT Sans', sans-serif;
+    font-size:15px;
 }
 
 .formulario{
-    margin-left:30px;
+    margin-left:60px;
 }
 
 .contacto{
-    max-width:1000px;
     margin: auto;
 }
 
@@ -347,6 +381,60 @@ input, textarea {
     margin-bottom: 70px;
 }
 
+.datos :first-child{
+    margin-right: 15px;
+}
+
+.datos div:last-child{
+    margin-left:15px;
+}
+#contactame i{
+    color: white;
+    width:40px;
+    font-size:30px;
+}
+
+#contactame ul{
+    margin-top: 50px;
+}
+
+#contactame ul li{
+    margin-top: 20px;
+}
+
+#contactame ul li a{
+    color: white;
+}
+
+
+
+/* -------------------------------------- Footer ---------------------------------*/
+/* ------------------------------------------------------------------------------ */
+
+footer{
+    padding:50px 0;
+}
+
+footer ul{
+    padding-left: 0;
+}
+footer ul li{
+    list-style-type: none;
+    margin: 40px;
+}
+
+footer ul li i{
+    font-size: 40px;
+    color: #fff;
+}
+
+footer h3{
+    padding:40px;
+}
+
+footer a{
+    color: #fff;
+}
 
 /* menu hamburguesa */
 
@@ -354,25 +442,91 @@ input, textarea {
     display: flex;
 }
 
-.respmenu{
+.respmenu input[type="checkbox"], .respmenu i{
     display:none;  
 }
 
 
-@media (max-width:750px) {
-    #nav-desktop{
-      display:none;  
+
+/* Media Querys */
+
+/* ---------------------------------- Pantallas Grandes ----------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+@media (max-width: 1200px) { 
+
+    .container{
+        width: 980px;
     }
-    
+    .btn {
+    padding: 10px 30px;
+    }
+
+    h1{
+    font-size:40px;
+    line-height:2;
+    margin: 0;
+    /* margin: -80px 0 0 0; */
+}
+
+h1 em{
+    display:block;
+    font-size:23px;
+    margin-left: 143px;
+}
+
+#sobreMi{
+    padding-top: 70px;
+}
+
+#sobreMi .btn{
+    margin-bottom:-20px;
+}
+
+    #sobreMi h2 {
+    /* margin-left:108px; */
+    margin-top: 13px;
+    margin-bottom: 32px;
+    letter-spacing: 1.4px;
+    /* font-weight: 200; */
+    font-size: 15px;
+    }
+
+    #conocimientos{
+    /* margin-top: -149px; */
+    /* position:relative; */
+
+    }
+
+    #cita div{
+        background-size: contain;
+    }
+}
+
+
+
+
+/* ---------------------------------- Tablets ----------------------------------- */
+/* ------------------------------------------------------------------------------ */
+
+@media (max-width: 992px) { 
+
+
+    .container{
+    width: 720px;
+    }
+
+    /* Menú */
+
+    .respmenu input[type="checkbox"], .respmenu i{
+    display:flex;  
+    }
 
     .respmenu a {
     color: inherit;
     text-decoration: none;
     display: block;
     padding: 10px 20px;
-    border-bottom: 2px solid #456789;
-    max-width: 200px;
-    background: #234567;
     font-variant: small-caps;
     text-shadow: 1px 1px black;
     }
@@ -382,8 +536,8 @@ input, textarea {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    right: 0;
-    top: 0;
+    right: 13px;
+    top: 16px;
     width: 48px;
     height: 48px;
     }
@@ -400,13 +554,22 @@ input, textarea {
     .respmenu {
     color: white;
     position: absolute;
-    /* margin-top:268px; */
     top: 0;
     right: 0;
     left: 0;
-    background: #123456;
-    min-height: 48px;
     display: flex;
+    background-color: #1f5075;
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+    }
+
+    .respmenu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .respmenu ul li{
+        margin-top: 60px;
     }
 
     .respmenu nav {
@@ -424,4 +587,155 @@ input, textarea {
     .respmenu input:not(:checked) ~ .fa-times {
     display: none;
     }
+
+    .respmenu nav ul:last-child {
+    margin-left: 0px;
+    margin-top:0;
+    }
+
+
+    /* ----------------------Sobre Mí --------------------- */
+    /* ---------------------------------------------------- */
+
+    .col-mob{
+        flex-direction: column;
+    } 
+
+    .align-mob-center {
+    align-items: center;
+    }
+    #sobreMi img {
+        width: 100%;
+        margin-bottom: -6px;
+        margin-top: 50px;
+    }
+
+    #sobreMi div div{
+        width: 100%;
+    }
+
+    #sobreMi div div:nth-child(2){
+        margin-bottom: -119px;
+    }
+
+    h1{
+        /* margin: 10px 0; */
+        text-align: center;
+        font-size:47px;
+        line-height:2.9;
+    }
+
+    h1 em {
+    display: block;
+    font-size: 50px;
+    margin-left: 0;
+    }
+
+    #presentacion {
+    padding-right: 0px;
+    }
+
+    #sobreMi h2 {
+    /* margin: 0 0 40px 0; */
+    letter-spacing: 1.5px;
+    font-weight: 200;
+    font-size: 25px;
+    margin-top:76px;
+    margin-bottom:80px;
+    }
+
+    .padding-seccion {
+    padding: 60px 0;
+    
+    }
+
+    #conocimientos h2{
+    margin-top: 70px; 
+    }
+
+
+
+    #cita div{
+        width:100%;
+        /* background-size: 270px; */
+        /* background-image: url(../img/cita_mob.png); */
+    }
+
+    .d-flex .col-mob .col{
+        align-items: center;
+    }
+
+    #contactame nav{
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
+    /* .col-mob{
+        flex-direction: column;
+    } */
+
+    .datos :first-child {
+    margin-right: 0;
+    }
+    .datos div:last-child {
+    margin-left: 0;
+    }
+    .d-flex .col-mob .col {
+    align-items: stretch;
+    }
+
+    .formulario{
+        margin-left:0;
+    }
+
+    /* footer nav ul{
+        display: flex;
+    } */
+}
+
+/* ---------------------------------Celulares------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) { 
+
+
+    .container{
+    width: 350px;
+    }
+
+    h1{
+        font-size:45px;
+    }
+
+    h1 em {
+    /* display: block; */
+    font-size: 32px;
+    }
+
+    #sobreMi h2 {
+        font-size:18px;
+    }
+
+    .titulos{
+    font-size:20px;
+    }
+
+    #cita div{
+        width:100%;
+        background-size: 270px;
+        background-image: url(../img/cita_mob.png);
+    }
+
+    #cita div p {
+    width: 136px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 18px;
+    }
+
+    #cita div p:last-child {
+    padding-left: 65px;
+    margin-top: -1px;
+    }
+
 }

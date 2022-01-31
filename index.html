@@ -10,21 +10,25 @@
 </head>
 <body>
     <header class="d-flex just-end align-center"> 
-        <div class="container-nav">
-            <nav id="nav-desktop" class="d-flex">
-                <ul class="d-flex menu">
-                    <li><a class="btn" href="#sobreMi">Sobre mí</a></li>
-                    <li><a class="btn" href="#conocimientos">Mis Conocimientos</a></li>
-                    <li><a class="btn" href="#proyectos">Mis Proyectos</a></li>
-                </ul>
-                <ul>
-                    <li><a class="btn btn-primary btn-rounded" href="#contactame">Contactame</a></li> 
-                </ul>
-            </nav>
+            <div class="respmenu">
+                <input type="checkbox">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+                <nav id="nav-desktop" class="d-flex">
+                    <ul class="d-flex menu col-mob">
+                        <li><a class="btn" href="#sobreMi">Sobre mí</a></li>
+                        <li><a class="btn" href="#conocimientos">Mis Conocimientos</a></li>
+                        <li><a class="btn" href="#proyectos">Mis Proyectos</a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="btn btn-primary btn-rounded" href="#contactame">Contactame</a></li> 
+                    </ul>
+                </nav>
+            </div>
 
             <!-- Menú hamburguesa -->
 
-            <div class="respmenu">
+            <!-- <div class="respmenu">
                 <input type="checkbox">
                 <i class="fas fa-bars"></i>
                 <i class="fas fa-times"></i>
@@ -37,22 +41,22 @@
                         <li><a href="#">Item 5</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
+            </div> -->
+        
     </header>
 
     <main>
 
         <!-- Comienzo sección Sobre Mí -->
 
-        <section id="sobreMi" class="padding-seccion">
-            <div class="container d-flex">
-                <div class="d-flex col just-center align-end" id="presentacion">
+        <section id="sobreMi">
+            <div class="container d-flex col-mob">
+                <div class="d-flex col just-end align-end align-mob-center" id="presentacion">
                     <h1>¡Hola! Soy <em class="font-primary">July Bondi</em></h1>
                     <h2>Desarrolladora y Cantante</h2>
                     <a href="#contactame" class="btn btn-rounded btn-secundary btn_small">¡CONTACTAME!</a>
                 </div>
-                <div class="d-flex col">
+                <div class="d-flex col just-end">
                     <img src="img/quien_soy.png" alt="¡Hola! Soy July Bondi, desarrolladora y cantante">
                 </div>
             </div>
@@ -66,7 +70,7 @@
             <div class="container d-flex just-center">
                 <div class="d-flex col align-center">
                     <div class="d-flex col align-center">
-                        <h2 class="font-primary">Mis Conocimientos</h2>
+                        <h2 class="font-primary titulos">Mis Conocimientos</h2>
                         <p>Actualmente me encuentro estudiando en <strong>Ada Itw</strong> la carrera de Front End, en donde estoy adquiriendo conocimientos como:</p>
                     </div>
                     <div class="d-flex wrap wrap-container just-around">
@@ -117,7 +121,7 @@
         <section id="proyectos" class="padding-seccion textura">
             <div class="container">
                 <div class="col d-flex align-center">
-                    <h2 class="font-primary">Mis Proyectos</h2>
+                    <h2 class="font-primary titulos">Mis Proyectos</h2>
                     <p>Estos son algunos de los proyectos que realicé y otros que estaré realizando muy pronto:</p>
                 </div>
                 <div class="d-flex wrap just-around">
@@ -149,19 +153,19 @@
 
         <section id="contactame">
             <div class="container">
-                <div class="d-flex align-center col contacto">
+                <div class="d-flex align-center col contacto ">
                     
-                        <h2 class="font-primary">Contactame</h2>
+                        <h2 class="font-primary titulos">Contactame</h2>
                     
-                    <div class="d-flex">
+                    <div class="d-flex col-mob">
                         <div class="d-flex col">
                             <p>¡Si queres contactarme no dudes en escribirme!</p>
                             <nav>
                                 <ul>
-                                    <li><a href=""><img src="" alt="">Diseño</a></li>
-                                    <li><a href="https://github.com/july8712"><img src="" alt="">GitHib</a></li>
-                                    <li><a href="https://www.linkedin.com/in/julieta-bondi/"><img src="" alt="">linkedin</a></li>
-                                    <li>julietabondi@gmail.com</li>
+                                    <li><a href="https://www.linkedin.com/in/julieta-bondi/"><i class="fab fa-linkedin"></i>linkedin</a></li>
+                                    <li><a href="https://github.com/july8712"><i class="fab fa-github"></i>GitHib</a></li>
+                                    <li><a href="https://www.behance.net/julietabondi"><i class="fab fa-behance-square"></i>Diseño</a></li>
+                                    <li><i class="fas fa-envelope-square"></i>julietabondi@gmail.com</li>
                                 </ul>
                             </nav>
                         </div>
@@ -169,17 +173,17 @@
                             <form action="" class="d-flex col">
 
                                 <!-- Nombre -->
-                                <div class="d-flex">
-                                    <div class="d-flex col">
+                                <div class="d-flex datos col-mob">
+                                    <div class="d-flex col just-center-mob">
                                         <label for="nombre">Nombre</label>
-                                        <input type="text" id="nombre" class="input-radius">
+                                        <input type="text" id="nombre" class="input-radius" placeholder="Nombre">
                                     </div>
 
                                     <!-- Teléfono -->
 
                                     <div class="d-flex col">
                                         <label for="telefono">Teléfono</label>
-                                        <input type="text" id="telefono" class="input-radius">
+                                        <input type="text" id="telefono" class="input-radius" placeholder="15-1234-5678">
                                     </div>
                                 </div>
 
@@ -187,17 +191,17 @@
 
                                 <div>
                                     <label for="email">Mail</label>
-                                    <input type="email" id="email" class="input-radius">
+                                    <input type="email" id="email" class="input-radius" placeholder="direccion@mail.com">
                                 </div>
 
                                 <!-- Mensaje -->
                                 
                                 <div>
                                     <label for="mensaje">Tu mensaje</label>
-                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="input-radius"></textarea>
+                                    <textarea name="mensaje" id="mensaje" cols="30" rows="15" class="input-radius" placeholder="Dejame tu mensaje acá..."></textarea>
                                 </div>
 
-                                <div>
+                                <div class="d-flex just-end">
                                     <input type="submit" value="Enviar" class="btn btn-rounded btn-secundary btn_small">
                                 </div>
                             </form>
@@ -211,22 +215,24 @@
 
     <footer class="textura">
         <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+            <ul class="d-flex just-center col-mob">
+                <li><a href="#sobreMi">Sobre mí</a></li>
+                <li><a href="#conocimientos">Mis Conocimientos</a></li>
+                <li><a href="#proyectos">Mis proyectos</a></li>
+                <li><a href="#contactame">Contactame</a></li>
             </ul>
         </nav>
         <nav>
-            <ul>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
+            <ul class="d-flex just-center col-mob">
+                <li><a href="https://www.linkedin.com/in/julieta-bondi/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/july8712"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.behance.net/julietabondi"><i class="fab fa-behance-square"></i></a></li>
+                <li><a href="mailto:julietabondi@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
             </ul>
         </nav>
-        <h3>Desarrollado por Julieta Bondi</h3>
+        <div class="d-flex just-center">
+            <h3>Desarrollado por Julieta Bondi</h3>
+        </div>
     </footer>
 </body>
 </html>
