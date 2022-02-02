@@ -23,10 +23,6 @@ a{
     text-decoration: none;
 }
 
-/* p{
-    font-size: 20px;
-} */
-
 .container{
     margin:auto;
     width: 1140px;
@@ -45,8 +41,16 @@ a{
     background-color: #163953;
 }
 
+.btn-primary:hover{
+    background-color: #1c4768;
+}
+
 .btn-secundary{
     background-color: #3690bd;
+}
+
+.btn-secundary:hover{
+    background-color: #50a2ca;
 }
 
 .btn_small{
@@ -60,9 +64,13 @@ a{
     background-color:white;
     padding:40px 40px 10px 40px;
     border-radius:20px;
-    /* width: 150px; */
+    width: 200px;
     margin: 40px 20px;
     box-shadow: 1px 1px 5px 0px rgb(110, 175, 255);
+}
+
+.card:hover{
+    box-shadow: 0px 0px 15px 2px rgba(57, 156, 205, 0.97);
 }
 
 .card h3{
@@ -79,7 +87,7 @@ a{
 }
 
 .padding-seccion{
-padding: 80px 0;
+    padding: 80px 0;
 }
 
 .textura{
@@ -120,13 +128,11 @@ footer h3{
 .align-center{
     align-items: center;
 }
+
 .align-end{
     align-items: end;
 }
 
-/* .align{
-    align-items: ;
-} */
 .wrap{
     flex-wrap: wrap;
 }
@@ -150,11 +156,10 @@ header{
     left: 0;
     right: 0;
     box-shadow: 4px 2px 5px 0px rgb(2, 25, 54);
-    
+    z-index: 10;
 } 
 
 header ul li{
-    /* margin: 0 20px; */
     list-style-type: none;
     padding: 5px 0;
 }
@@ -173,19 +178,22 @@ header nav ul:last-child{
     margin-left: 10px;
 }
 
+.respmenu nav ul:first-child li:hover a{
+    border-bottom: 2px solid white;
+}
+
 
 /* --------------------------------Sobre Mi ---------------------------------*/
 /* ------------------------------------------------------------------------- */
 
 #sobreMi{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 #sobreMi img{  
     width:100%;
     margin-bottom: -100px;
-    /* margin-top: 40px; */
 }
 
 #sobreMi div div{
@@ -198,9 +206,8 @@ header nav ul:last-child{
 
 h1{
     font-size:40px;
-    line-height:2;
+    line-height:2.2;
     margin: 0;
-    /* margin: -80px 0 0 0; */
 }
 
 h1 em{
@@ -210,8 +217,6 @@ h1 em{
 }
 
 #sobreMi h2{
-    /* margin-left:150px; */
-    /* margin-top: -15px; */
     margin-bottom: 47px;
     letter-spacing: 1.5px;
     font-weight: 200;
@@ -230,30 +235,14 @@ h1 em{
 
 #conocimientos{
     margin-top: 0px;
-
-    /* position:relative; */
-
  } 
 
-/* #conocimientos .container{
-    max-width:120px
-} */
-/* 
-#conocimientos::after{
-    content:"";
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    background-color:rgba(0, 0, 0, 0.4)
-} */
+
 
 #conocimientos div div p{
     text-align:center;
 }
 
-/* #conocimientos div div  */
 
 /* --------------------------------    Cita    ---------------------------------*/
 /* -----------------------------------------------------------------------------*/
@@ -291,7 +280,45 @@ h1 em{
 }
 
 .proyectos img{
+    display: block;
+}
+
+.proyectos a:hover{
+    box-shadow: 0px 0px 15px 2px rgba(57, 156, 205, 0.97);
+}
+
+.proyectos a{
+    display: block;
+    position: relative;
+    overflow: hidden;
     border-radius:30px;
+}
+
+.proyectos a span{
+    background-color: transparent;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    position:absolute;
+    height: 50%;
+    padding: 30px;
+    color:white;
+    padding: 30px;
+    text-align: center;
+    color: transparent;
+}
+
+.proyectos a:hover span{
+    background-color:#173954;
+    -webkit-transition: background 1s ease;
+    -moz-transition: background 1s ease;
+    -ms-transition: background 1s ease;
+    -o-transition: background 1s ease;
+    transition: background 1s ease;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 30px;
 }
 
 #proyectos .container .wrap{
@@ -320,13 +347,9 @@ h1 em{
     list-style-type: none;
 }
 
-/* .contacto .d-flex .col{
-    width: 50%;
-} */
-
-/* .contacto form{
-    padding-top: 20px;
-} */
+#contactame nav ul li a:hover i, #contactame nav ul li:hover i{
+    color: #3590bd;
+}
 
 .input-radius{
     border-radius:30px;
@@ -352,9 +375,9 @@ input:not(input[type="submit"]), textarea {
 
 
 input[type="text"], input[type="email"]{
-height:40px;
-border: none;
-font-size: 15px;
+    height:40px;
+    border: none;
+    font-size: 15px;
 }
 
 input[type="submit"]{
@@ -437,6 +460,11 @@ footer a{
     color: #fff;
 }
 
+
+footer ul li i:hover{
+    color:#3590bd;
+}
+
 /* menu hamburguesa */
 
 #nav-desktop ul{
@@ -467,7 +495,6 @@ footer a{
     font-size:40px;
     line-height:2;
     margin: 0;
-    /* margin: -80px 0 0 0; */
 }
 
 h1 em{
@@ -485,18 +512,10 @@ h1 em{
 }
 
     #sobreMi h2 {
-    /* margin-left:108px; */
-    margin-top: 13px;
-    margin-bottom: 32px;
-    letter-spacing: 1.4px;
-    /* font-weight: 200; */
-    font-size: 15px;
-    }
-
-    #conocimientos{
-    /* margin-top: -149px; */
-    /* position:relative; */
-
+        margin-top: 13px;
+        margin-bottom: 32px;
+        letter-spacing: 1.4px;
+        font-size: 15px;
     }
 
     #cita div{
@@ -514,7 +533,7 @@ h1 em{
 
 
     .container{
-    width: 720px;
+        width: 720px;
     }
 
     .align-mob-center{
@@ -523,48 +542,48 @@ h1 em{
     /* Menú */
 
     .respmenu input[type="checkbox"], .respmenu i{
-    display:flex;  
+        display:flex;  
     }
 
     .respmenu a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        font-variant: small-caps;
+        text-shadow: 1px 1px black;
     }
 
     .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
-    position: absolute;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    right: 13px;
-    top: 16px;
-    width: 48px;
-    height: 48px;
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 13px;
+        top: 16px;
+        width: 48px;
+        height: 48px;
     }
 
     .respmenu .fa-bars, .respmenu .fa-times {
-    font-size: 48px;
-    pointer-events: none;
+        font-size: 48px;
+        pointer-events: none;
     }
 
     .respmenu input[type="checkbox"] {
-    opacity: 0;
+        opacity: 0;
     }
 
     .respmenu {
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    background-color: #1f5075;
-    background-image: url(../img/fondo.png);
-    background-repeat: repeat;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        background-color: #1f5075;
+        background-image: url(../img/fondo.png);
+        background-repeat: repeat;
     }
 
     .respmenu ul {
@@ -577,24 +596,36 @@ h1 em{
     }
 
     .respmenu nav {
-    display: none;
+        display: none;
     }
 
     .respmenu input:checked ~ nav {
-    display: block;
+        display: block;
+        animation: menu 2s ease 10ms 1 normal forwards;
     }
 
+    @keyframes menu {
+        0% {
+        opacity: 0;
+        transform: translateY(-50px);
+        }
+
+        100% {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
     .respmenu input:checked ~ .fa-bars {
-    display: none;
+        display: none;
     }
 
     .respmenu input:not(:checked) ~ .fa-times {
-    display: none;
+        display: none;
     }
 
     .respmenu nav ul:last-child {
-    margin-left: 0px;
-    margin-top:0;
+        margin-left: 0px;
+        margin-top:0;
     }
 
 
@@ -619,46 +650,42 @@ h1 em{
     }
 
     h1{
-        /* margin: 10px 0; */
         text-align: center;
         font-size:47px;
         line-height:2.9;
     }
 
     h1 em {
-    display: block;
-    font-size: 50px;
-    margin-left: 0;
+        display: block;
+        font-size: 50px;
+        margin-left: 0;
     }
 
     #presentacion {
-    padding-right: 0px;
+        padding-right: 0px;
     }
 
     #sobreMi h2 {
-    /* margin: 0 0 40px 0; */
-    letter-spacing: 1.5px;
-    font-weight: 200;
-    font-size: 25px;
-    margin-top:76px;
-    margin-bottom:80px;
+        letter-spacing: 1.5px;
+        font-weight: 200;
+        font-size: 25px;
+        margin-top:76px;
+        margin-bottom:80px;
     }
 
     .padding-seccion {
-    padding: 60px 0;
+        padding: 60px 0;
     
     }
 
     #conocimientos h2{
-    margin-top: 70px; 
+        margin-top: 70px; 
     }
 
 
 
     #cita div{
         width:100%;
-        /* background-size: 270px; */
-        /* background-image: url(../img/cita_mob.png); */
     }
 
     .d-flex .col-mob .col{
@@ -674,13 +701,13 @@ h1 em{
     }
 
     .datos :first-child {
-    margin-right: 0;
+        margin-right: 0;
     }
     .datos div:last-child {
-    margin-left: 0;
+        margin-left: 0;
     }
     .d-flex .col-mob .col {
-    align-items: stretch;
+        align-items: stretch;
     }
 
     .formulario{
@@ -697,10 +724,6 @@ h1 em{
     footer nav ul li a{
         font-size:19px;
     }
-
-    /* footer nav ul{
-        display: flex;
-    } */
 }
 
 /* ---------------------------------Celulares------------------------------------- */
@@ -718,20 +741,15 @@ h1 em{
     }
 
     .align-mob-center {
-    align-items: center;
+        align-items: center;
     }
 
     h1{
         font-size:45px;
     }
 
-    /* p{
-        width:280px;
-    } */
-
     h1 em {
-    /* display: block; */
-    font-size: 32px;
+        font-size: 32px;
     }
 
     #sobreMi h2 {
@@ -743,7 +761,7 @@ h1 em{
     }
 
     .titulos{
-    font-size:20px;
+        font-size:20px;
     }
 
     #cita div{
@@ -753,24 +771,24 @@ h1 em{
     }
 
     #cita div p {
-    width: 136px;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    margin-top: 18px;
+        width: 136px;
+        text-align: center;
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 18px;
     }
 
     #cita div p:last-child {
-    padding-left: 65px;
-    margin-top: -1px;
+        padding-left: 65px;
+        margin-top: -1px;
     }
 
     .datos :first-child {
-    margin-right: 0;
+        margin-right: 0;
     }
 
     .datos div:last-child {
-    margin-left: 0;
+        margin-left: 0;
     }
 
     footer {
