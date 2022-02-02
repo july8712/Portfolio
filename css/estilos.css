@@ -179,11 +179,12 @@ header nav ul:last-child{
 
 #sobreMi{
     width: 100%;
+    padding-top: 50px;
 }
 
 #sobreMi img{  
     width:100%;
-    margin-bottom: -94px;
+    margin-bottom: -100px;
     /* margin-top: 40px; */
 }
 
@@ -516,6 +517,9 @@ h1 em{
     width: 720px;
     }
 
+    .align-mob-center{
+        align-items: center;
+    }
     /* Menú */
 
     .respmenu input[type="checkbox"], .respmenu i{
@@ -597,13 +601,9 @@ h1 em{
     /* ----------------------Sobre Mí --------------------- */
     /* ---------------------------------------------------- */
 
-    .col-mob{
-        flex-direction: column;
-    } 
+     
 
-    .align-mob-center {
-    align-items: center;
-    }
+    
     #sobreMi img {
         width: 100%;
         margin-bottom: -6px;
@@ -669,9 +669,9 @@ h1 em{
         margin-bottom: 60px;
         margin-top: 30px;
     }
-    /* .col-mob{
+    .sobreMi-col-mob{
         flex-direction: column;
-    } */
+    }
 
     .datos :first-child {
     margin-right: 0;
@@ -686,6 +686,17 @@ h1 em{
     .formulario{
         margin-left:0;
     }
+    .datos :first-child{
+        margin-right:10px;
+    }
+
+    .datos div:last-child{
+        margin-left:10px;
+    }
+
+    footer nav ul li a{
+        font-size:19px;
+    }
 
     /* footer nav ul{
         display: flex;
@@ -699,12 +710,24 @@ h1 em{
 
 
     .container{
-    width: 350px;
+    width: 280px;
+    }
+
+    .col-mob{
+        flex-direction: column;
+    }
+
+    .align-mob-center {
+    align-items: center;
     }
 
     h1{
         font-size:45px;
     }
+
+    /* p{
+        width:280px;
+    } */
 
     h1 em {
     /* display: block; */
@@ -713,6 +736,10 @@ h1 em{
 
     #sobreMi h2 {
         font-size:18px;
+    }
+
+    #sobreMi img{
+        margin-bottom: 70px;
     }
 
     .titulos{
@@ -737,5 +764,27 @@ h1 em{
     padding-left: 65px;
     margin-top: -1px;
     }
+
+    .datos :first-child {
+    margin-right: 0;
+    }
+
+    .datos div:last-child {
+    margin-left: 0;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    footer h3{
+        text-align: center;
+    }
+
+    footer ul li {
+        margin: 16px;
+    }
+
+    
 
 }
