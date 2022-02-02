@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Betterworks";
+    src: url("./fuentes/Betterworks.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,*::after, *::before { 
+    box-sizing: border-box; 
+}
+
+
+body{
+    background-color: #1f5075;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+.container{
+    margin:auto;
+    width: 80%;
+}
+
+.btn{
+    border-radius:50px;
+}
+
+.btn-primary{
+    background-color: #163953;
+    padding: 10px 50px;
+}
+
+.cursiva{
+    font-family: Betterworks;
+}
+/*-------------------------- Flex -------------------------------*/
+/*---------------------------------------------------------------*/
+
+.d-flex{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.just-end{
+    justify-content: end;
+}
+
+.just-around{
+    justify-content: space-around;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+
+
+
+/*----------------------------- Fin Flex -------------------------------*/
+/*----------------------------------------------------------------------*/
+
+
+/*------------------------------- Header -------------------------------*/
+/*----------------------------------------------------------------------*/
+
+header{
+    background-color: #3690bd;
+    height:80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 4px 2px 5px 0px rgb(2, 25, 54);
+} 
+
+header ul li{
+    margin: 0 20px 0 20px;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 2px 3px 4px rgba(2,25,54,0.6);
+}
+
+header nav{
+    margin-right: 100px;
+}
+
