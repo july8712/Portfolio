@@ -700,6 +700,14 @@ h1 em{
         flex-direction: column;
     }
 
+    .proyectos a span{
+        background-color:#173954;
+        opacity: 0.9;
+        color: #fff;
+        font-size: 20px;
+        height: 35%;
+    }
+
     .datos :first-child {
         margin-right: 0;
     }
