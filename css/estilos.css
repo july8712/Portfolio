@@ -351,46 +351,8 @@ h1 em{
     color: #3590bd;
 }
 
-.input-radius{
-    border-radius:30px;
-}
-
-form{
-    width:100%;
-}
-
-label{
-    display:block;
-    margin-bottom:10px;
-    margin-top:20px;
-    font-size:20px;
-}
-
-input:not(input[type="submit"]), textarea {
-    display:block;
-    width: 100%;
-    padding:15px;
-}
 
 
-
-input[type="text"], input[type="email"]{
-    height:40px;
-    border: none;
-    font-size: 15px;
-}
-
-input[type="submit"]{
-    border: none;
-    margin-top: 25px;
-}
-
-textarea{
-    border: none;
-    resize:none;
-    font-family: 'PT Sans', sans-serif;
-    font-size:15px;
-}
 
 .formulario{
     margin-left:60px;
@@ -414,16 +376,18 @@ textarea{
 }
 #contactame i{
     color: white;
-    width:40px;
-    font-size:30px;
+    font-size:70px;
+    line-height:2;
 }
 
 #contactame ul{
     margin-top: 50px;
+    width:900px;
 }
 
 #contactame ul li{
-    margin-top: 20px;
+    margin: 20px 10px 0 10px;
+    /* width: 250px; */
 }
 
 #contactame ul li a{
@@ -692,6 +656,10 @@ h1 em{
         align-items: center;
     }
 
+    #contactame ul{
+        width:100%;
+    }
+
     #contactame nav{
         margin-bottom: 60px;
         margin-top: 30px;
@@ -729,8 +697,17 @@ h1 em{
         margin-left:10px;
     }
 
-    footer nav ul li a{
-        font-size:19px;
+    #contactame nav {
+        width:700px;
+    }
+
+    #contactame i {
+    font-size: 55px;
+    line-height: 1.5;
+    }
+
+    footer nav ul li a {
+        font-size: 19px;
     }
 }
 
@@ -797,6 +774,14 @@ h1 em{
 
     .datos div:last-child {
         margin-left: 0;
+    }
+
+    #contactame nav ul {
+        flex-direction: column;
+    }
+
+    .contacto h2{
+        margin-bottom:0;
     }
 
     footer {
