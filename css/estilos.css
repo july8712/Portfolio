@@ -706,6 +706,10 @@ h1 em{
     line-height: 1.5;
     }
 
+    #contactame h2{
+        margin-bottom: 0;
+    }
+
     footer nav ul li a {
         font-size: 19px;
     }
